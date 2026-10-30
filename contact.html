@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BrightFuture Academy</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Shared Sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Custom Script Shared Sheet -->
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        Limited time! <strong>Enroll now</strong> and start your learning journey.
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container navbar">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                🌿 Bright<span>Future</span>
+            </a>
+
+            <!-- Nav Links -->
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Course</a>
+                <a href="admissions.html" class="nav-link">Admission</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Nav Actions -->
+            <div class="nav-actions">
+                <button class="search-trigger" aria-label="Search Courses">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Contact Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="section">
+        <div class="container contact-grid">
+            <!-- Left Column: Contact Form -->
+            <div class="card application-form-card">
+                <h3 class="form-title">Send a Message</h3>
+                <form action="#" method="POST" id="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group form-group-full">
+                            <label for="contact-name">Full Name *</label>
+                            <input type="text" id="contact-name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email Address *</label>
+                            <input type="email" id="contact-email" class="form-control" placeholder="ex.myname@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone">Phone Number *</label>
+                            <input type="tel" id="contact-phone" class="form-control" placeholder="(000) 000-0000" required>
+                        </div>
+                        <div class="form-group form-group-full">
+                            <label for="contact-subject">Subject *</label>
+                            <input type="text" id="contact-subject" class="form-control" placeholder="Enter Subject" required>
+                        </div>
+                        <div class="form-group form-group-full">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" class="form-control" placeholder="Type your query here..." required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Message</button>
+                </form>
+            </div>
+
+            <!-- Right Column: Info Cards & Maps -->
+            <div class="contact-info-cards">
+                <!-- Info cards grid wrapper -->
+                <div style="display:flex; flex-direction:column; gap:16px;">
+                    <!-- Card 1 -->
+                    <div class="card contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info-details">
+                            <h4>Campus Address</h4>
+                            <p>102 Leafy Way, Green Valley, CA 90210</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info-details">
+                            <h4>Email Communication</h4>
+                            <p>brightfuture@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card contact-info-card">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-info-details">
+                            <h4>Helpline Phone</h4>
+                            <p>+1 (800) 555-0199</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map Placeholder -->
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h4>Interactive Campus Map</h4>
+                        <p>102 Leafy Way, Green Valley, California</p>
+                        <p style="font-size:0.75rem; color:var(--text-muted); margin-top:8px;">(Google Map placeholder rendered using local styling layout)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <!-- Col 1 -->
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="color: var(--text-light)">
+                    🌿 Bright<span style="color: var(--secondary-color)">Future</span>
+                </a>
+                <p class="footer-desc">
+                    BrightFuture Academy is a premium global cohort academy designed to build high-demand careers in modern UI/UX design, full-stack programming, and artificial intelligence models with certified live portfolios.
+                </p>
+            </div>
+            <!-- Col 2 -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li class="footer-link-item"><a href="index.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> Home</a></li>
+                    <li class="footer-link-item"><a href="about.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> About</a></li>
+                    <li class="footer-link-item"><a href="courses.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> Course</a></li>
+                    <li class="footer-link-item"><a href="admissions.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> Admissions</a></li>
+                </ul>
+            </div>
+            <!-- Col 3 -->
+            <div class="footer-col">
+                <h3>Popular Course</h3>
+                <ul class="footer-links">
+                    <li class="footer-link-item"><a href="courses.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> UI/UX Design</a></li>
+                    <li class="footer-link-item"><a href="courses.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> MERN Stack Development</a></li>
+                    <li class="footer-link-item"><a href="courses.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> Data Science</a></li>
+                    <li class="footer-link-item"><a href="courses.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> Digital Marketing</a></li>
+                </ul>
+            </div>
+            <!-- Col 4 -->
+            <div class="footer-col">
+                <h3>Get In Touch</h3>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>102 Leafy Way, Green Valley, CA 90210</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>brightfuture@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+1 (800) 555-0199</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar -->
+        <div class="container footer-bottom">
+            Copyright &copy; 2024 All Right Reserved
+        </div>
+    </footer>
+
+    <!-- Search Overlay Component -->
+    <div class="search-overlay">
+        <button class="search-close" aria-label="Close Search"><i class="fas fa-times"></i></button>
+        <div class="search-container">
+            <form action="#" class="search-input-wrapper">
+                <input type="text" class="search-input" placeholder="Search for courses, levels, topics..." required>
+                <button type="submit" class="search-btn" aria-label="Submit Search"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

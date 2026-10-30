@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions Open - BrightFuture Academy</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Shared Sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Custom Script Shared Sheet -->
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        Limited time! <strong>Enroll now</strong> and start your learning journey.
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container navbar">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                🌿 Bright<span>Future</span>
+            </a>
+
+            <!-- Nav Links -->
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Course</a>
+                <a href="admissions.html" class="nav-link">Admission</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Nav Actions -->
+            <div class="nav-actions">
+                <button class="search-trigger" aria-label="Search Courses">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Admissions Open</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Admissions</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expanded Steps Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label">Enrollment Flow</span>
+                <h2 class="section-title">Your 4-Step Journey to BrightFuture</h2>
+                <p class="section-subtext">Our streamlined cohort enrollment cycle ensures a seamless onboarding experience.</p>
+            </div>
+
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="card step-card">
+                    <div class="step-number-icon">1</div>
+                    <h3 class="step-title">Fill Application</h3>
+                    <p class="step-description">Submit your personal credentials, contact points, and course track preferences using our detailed form below.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="card step-card">
+                    <div class="step-number-icon">2</div>
+                    <h3 class="step-title">Submit Documents</h3>
+                    <p class="step-description">Upload soft copies of your transcripts, curriculum vitae, and government-issued identifications for verification.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="card step-card">
+                    <div class="step-number-icon">3</div>
+                    <h3 class="step-title">Counselling</h3>
+                    <p class="step-description">Receive a personalized call with our cohort leads to finalize payment modules, class slots, and scholarship parameters.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="card step-card">
+                    <div class="step-number-icon">4</div>
+                    <h3 class="step-title">Pay Fees</h3>
+                    <p class="step-description">Process your tuition fee securely via online credit networks, activate student dashboards, and gain instant pre-class kits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Application Form Section (Light Green BG) -->
+    <section class="section alt-bg">
+        <div class="container">
+            <div class="application-grid">
+                <!-- Left Column: Detailed Form -->
+                <div class="card application-form-card">
+                    <h3 class="form-title">Detailed Admission Application</h3>
+                    <form action="#" method="POST" id="detailed-admission-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" class="form-control" placeholder="Last Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" class="form-control" placeholder="ex.myname@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="(000) 000-0000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pref-course">Preferred Course *</label>
+                                <select id="pref-course" class="form-control" required>
+                                    <option value="">Select a Course</option>
+                                    <option value="uiux">UI/UX Design Masterclass</option>
+                                    <option value="mern">MERN Stack Web Development</option>
+                                    <option value="datascience">Data Science & Predictive AI</option>
+                                    <option value="python">Python Development Core</option>
+                                    <option value="digitalmarketing">Digital Marketing & Growth</option>
+                                    <option value="cybersecurity">Cybersecurity & Ethical Hacking</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="study-mode">Mode of Study *</label>
+                                <select id="study-mode" class="form-control" required>
+                                    <option value="">Select Mode</option>
+                                    <option value="online">Online (Live Remote Cohort)</option>
+                                    <option value="offline">Offline (In-person Campus Labs)</option>
+                                    <option value="hybrid">Hybrid (Blended Classroom)</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-group-full">
+                                <label for="academic-qual">Previous Academic Qualification *</label>
+                                <select id="academic-qual" class="form-control" required>
+                                    <option value="">Select Qualification</option>
+                                    <option value="highschool">High School Diploma / Graduate</option>
+                                    <option value="bachelor">Bachelor's Degree</option>
+                                    <option value="master">Master's Degree</option>
+                                    <option value="other">Other Professional Diploma</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-group-full">
+                                <label for="sop">Statement of Purpose / Why do you want to join? (Optional)</label>
+                                <textarea id="sop" class="form-control" placeholder="Tell us briefly about your career aspirations..."></textarea>
+                            </div>
+                            <div class="form-group form-group-full" style="flex-direction:row; align-items:center; gap:10px;">
+                                <input type="checkbox" id="scholarship-check" style="width:18px; height:18px; cursor:pointer;">
+                                <label for="scholarship-check" style="cursor:pointer; font-weight:500;">Check here if you wish to apply for the Merit-based Scholarship (up to 50% waiver)</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Detailed Application</button>
+                    </form>
+                </div>
+
+                <!-- Right Column: Scholarship Card & General visual -->
+                <div class="application-visual-container">
+                    <!-- Yellow Scholarship Box -->
+                    <div class="scholarship-info-box" style="border-left: 6px solid var(--badge-advanced);">
+                        <h4 style="font-size:1.2rem; margin-bottom:12px;"><i class="fas fa-graduation-cap"></i> 🎓 Scholarship Available!</h4>
+                        <p style="margin-bottom:16px;">We offer merit-based scholarships covering up to 50% of tuition fees to deserving tech talents who demonstrate high dedication and core basic aptitude.</p>
+                        <ul style="font-size:0.85rem; display:flex; flex-direction:column; gap:8px; color:#713f12;">
+                            <li><i class="fas fa-check" style="color:var(--primary-color)"></i> Up to 50% tuition coverage</li>
+                            <li><i class="fas fa-check" style="color:var(--primary-color)"></i> Evaluated during counsellor call</li>
+                            <li><i class="fas fa-check" style="color:var(--primary-color)"></i> Basic aptitude diagnostic test</li>
+                        </ul>
+                    </div>
+
+                    <!-- Campus Visual Panel -->
+                    <div style="background:var(--bg-white); padding:30px; border-radius:var(--radius-card); box-shadow:var(--shadow-subtle); border: 1px solid rgba(45, 106, 45, 0.1);">
+                        <h4 style="color:var(--primary-color); margin-bottom:12px;"><i class="fas fa-info-circle"></i> Need Enrollment Support?</h4>
+                        <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.5; margin-bottom:16px;">Our global help desk is open 24/7. Connect directly with our counselor if you have custom schedule requirements.</p>
+                        <p style="font-size:0.88rem; font-weight:600; color:var(--accent-color);"><i class="fas fa-phone-alt"></i> Call us: +1 (800) 555-0199</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtext">Clear, transparent answers to queries regarding applications, eligibility, and scholarship programs.</p>
+            </div>
+
+            <!-- FAQ Container -->
+            <div class="faq-container">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span class="faq-question">What are the criteria for the Merit-based Scholarship?</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Our academic advisors evaluate your scholarship eligibility based on three factors: previous academic achievement, details provided in your Statement of Purpose (SOP), and a short, 20-minute basic diagnostic aptitude evaluation conducted online during step 3 of the counseling session.</p>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span class="faq-question">Can I attend classes on a part-time basis or during weekends?</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes, absolutely! We understand that many students work full-time or have ongoing commitments. We offer dedicated evening batches (7:00 PM - 9:30 PM, Mon-Fri) as well as full intensive Weekend-only cohorts (9:00 AM - 5:00 PM, Saturday & Sunday).</p>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span class="faq-question">Is the placement support guarantee backed by partnerships?</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes, we have 150+ direct corporate placement partners across major IT hubs. While we provide 100% placement support—including resume crafting, direct mock reviews, and scheduling referral interview slots—the ultimate conversion depends entirely on the student's performance.</p>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span class="faq-question">Are the online cohort sessions recorded if I miss a live class?</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes, every live remote session is immediately recorded in high-definition and uploaded to your personal student portal dashboard within 2 hours of the class. You will maintain lifetime, unrestricted access to all dashboard video logs and class repositories.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <!-- Col 1 -->
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="color: var(--text-light)">
+                    🌿 Bright<span style="color: var(--secondary-color)">Future</span>
+                </a>
+                <p class="footer-desc">
+                    BrightFuture Academy is a premium global cohort academy designed to build high-demand careers in modern UI/UX design, full-stack programming, and artificial intelligence models with certified live portfolios.
+                </p>
+            </div>
+            <!-- Col 2 -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li class="footer-link-item"><a href="index.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> Home</a></li>
+                    <li class="footer-link-item"><a href="about.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> About</a></li>
+                    <li class="footer-link-item"><a href="courses.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> Course</a></li>
+                    <li class="footer-link-item"><a href="admissions.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> Admissions</a></li>
+                </ul>
+            </div>
+            <!-- Col 3 -->
+            <div class="footer-col">
+                <h3>Popular Course</h3>
+                <ul class="footer-links">
+                    <li class="footer-link-item"><a href="courses.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> UI/UX Design</a></li>
+                    <li class="footer-link-item"><a href="courses.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> MERN Stack Development</a></li>
+                    <li class="footer-link-item"><a href="courses.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> Data Science</a></li>
+                    <li class="footer-link-item"><a href="courses.html"><i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--secondary-color)"></i> Digital Marketing</a></li>
+                </ul>
+            </div>
+            <!-- Col 4 -->
+            <div class="footer-col">
+                <h3>Get In Touch</h3>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>102 Leafy Way, Green Valley, CA 90210</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>brightfuture@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+1 (800) 555-0199</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar -->
+        <div class="container footer-bottom">
+            Copyright &copy; 2024 All Right Reserved
+        </div>
+    </footer>
+
+    <!-- Search Overlay Component -->
+    <div class="search-overlay">
+        <button class="search-close" aria-label="Close Search"><i class="fas fa-times"></i></button>
+        <div class="search-container">
+            <form action="#" class="search-input-wrapper">
+                <input type="text" class="search-input" placeholder="Search for courses, levels, topics..." required>
+                <button type="submit" class="search-btn" aria-label="Submit Search"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
